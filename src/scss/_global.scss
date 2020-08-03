@@ -6,9 +6,18 @@
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: $title-color;
+  }
+}
+h1,h2.h3,h4,h5,h6 {
+  margin: 0;
 }
 ul {
+  margin-bottom: 0;
+  padding: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -16,4 +25,22 @@ body {
   font-family: $main-font, sans-serif;
   font-size: 15px;
   color: $text-color;
+  font-weight: 500;
+  background-color: $main-background;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  color: $title-color
+}
+.btn {
+  padding: 15px 45px;
+  border: 1.1px $btn-color solid;
+  border-radius: 33.3px;
+  font-weight: 600; 
+  font-size: 12px;
+  color: $btn-color !important;
+  
 }

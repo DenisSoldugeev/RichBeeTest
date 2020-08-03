@@ -1,0 +1,25 @@
+.header {
+  padding: 25px 0 65px 0;
+  &__wrapper {
+  }
+
+  &__logo {
+    &--link {
+
+    }
+  }
+
+  &__menu {
+    &--item {
+      margin-right: 25px;
+    }
+    &--link {
+      color: $text-color;
+    }
+  }
+
+  &__btn {
+    padding: 10px 25px;
+
+  }
+}

@@ -1,0 +1,76 @@
+.main {
+  &__text {
+    max-width: 500px;
+    position: relative;
+  }
+
+  &__title {
+    color: $title-color;
+    font-weight: bold;
+    font-size: 40.2px;
+    line-height: 49px;
+  }
+
+  &__description {
+    margin: 15px 0 20px 0;
+  }
+
+  &-form {
+    position: relative;
+    margin-bottom: 20px;
+    &__input {
+        background-color: $white;
+        border-radius: 33.3px;
+        outline: none;
+        border: none;
+        padding: 15px 15px;
+        width: 400px;
+    }
+    &__btn {
+      position: absolute;
+      right: 20px;
+      color: $white !important;
+      background-color: $btn-color;
+    }
+  }
+  &__rigth {
+    position: relative;
+  }
+  &__empty-circle {
+    z-index: -1;
+    background: url(../img/empty_circle.png) no-repeat center;
+    min-width: 42px;
+    min-height: 42px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__orange-circle {
+    z-index: -1;
+    background: url(../img/orange_circle.png) no-repeat center;
+    min-width: 61px;
+    min-height: 61px;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+  }
+}
+
+.advantages {
+  &__item {
+    margin-right: 20px;
+    & i {
+      margin-right: 4px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.dots {
+  position: absolute;
+  top: -7px;
+  left: -18px;
+  z-index: -1;
+}
