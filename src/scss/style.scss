@@ -1,0 +1,12 @@
+// импорты файлов scss
+@import '../fonts/fonts';
+// Переменные
+@import './variables';
+// Глобальные стили на сайте
+@import './global';
+
+@import './header';
+@import './main';
+@import './reviews';
+@import './order';
+@import './footer'
