@@ -1,0 +1,133 @@
+.reviews {
+  padding: 130px 0;
+  position: relative;
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__slider {
+    position: relative;
+    max-width: 500px;
+    padding: 10px 0 30px 0;
+    text-align: center;
+    margin: 0 auto;
+    background: $white;
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 8.3px;
+  }
+  &-img {
+    &__one {
+      position: absolute;
+      background: url('../img/reviews/Image-2.png') center no-repeat;
+      width: 28px;
+      height: 40px;
+      left: 10%;
+      top: 35%;
+    }
+    &__two {
+      position: absolute;
+      background: url('../img/reviews/Image-1.png') center no-repeat;
+      width: 52px;
+      height: 62px;
+      left: 15%;
+      top: 45%;
+    }
+    &__three {
+      position: absolute;
+      background: url('../img/reviews/Image.png') center no-repeat;
+      width: 52px;
+      height: 62px;
+      left: 0;
+      top: 70%;
+    }
+    &__four {
+      position: absolute;
+      background: url('../img/reviews/Image-4.png') center no-repeat;
+      width: 52px;
+      height: 62px;
+      right: 0;
+      top: 20%;
+    }
+    &__five {
+      position: absolute;
+      background: url('../img/reviews/Image-3.png') center no-repeat;
+      width: 42px;
+      height: 62px;
+      right: 20%;
+      top: 35%;
+    }
+    &__six {
+      position: absolute;
+      background: url('../img/reviews/Image-5.png') center no-repeat;
+      width: 52px;
+      height: 62px;
+      right: 5%;
+      top: 65%;
+    }
+    &__dots {
+      position: absolute;
+      background: url('../img/reviews/dots.png') center no-repeat;
+      width: 46px;
+      height: 44px;
+      right: 30%;
+      bottom: 15%;
+    }
+  }
+}
+.slider {
+  &__item {
+    margin: 10px;
+    position: relative;
+    outline: none;
+  
+  }
+  &__avatar--title {
+    font-weight: 600;
+    font-size: 14.5542px;
+    line-height: 17px;
+    color: $title-color;
+  }
+
+  &__quotes {
+    padding: 15px 0;
+  }
+
+  &__description {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  &__dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: -35px;
+    & li {
+      background-color: #DBE5F1;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin: 0px 4px;
+      & button {
+        font-size: 0;
+        line-height: 0;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+      &.slick-active {
+        background-color: #26C296;
+        border-radius: 47.8208px;
+        width: 22px;
+      }
+    }
+  }
+}
+.slick-slide img {
+  display: unset;
+}

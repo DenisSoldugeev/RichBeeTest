@@ -1,14 +1,6 @@
 .header {
   padding: 25px 0 65px 0;
-  &__wrapper {
-  }
-
-  &__logo {
-    &--link {
-
-    }
-  }
-
+  position: relative;
   &__menu {
     &--item {
       margin-right: 25px;
@@ -17,9 +9,59 @@
       color: $text-color;
     }
   }
-
   &__btn {
     padding: 10px 25px;
-
+    &:hover {
+      color: $btn-color;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
   }
+  &__circle {
+    background: url('../img/header/circle.png') no-repeat center;
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    top: -10px;
+    left: 30%;
+  }
+  &__menu-hamburger {
+    margin-right: 20px;
+    & span {
+      width: 30px;
+      height: 4px;
+      background-color: $text-color;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.menu__mobile {
+  transition: all 0.5s;
+  top: -1500px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  background-color: $white;
+  z-index: 99;
+  &--link {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &--close {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+.close {
+  
+}
+.open {
+  top: 0;
 }

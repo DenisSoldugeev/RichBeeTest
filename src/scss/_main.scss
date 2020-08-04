@@ -24,7 +24,7 @@
         outline: none;
         border: none;
         padding: 15px 15px;
-        width: 400px;
+        width: 75%;
     }
     &__btn {
       position: absolute;
@@ -38,7 +38,7 @@
   }
   &__empty-circle {
     z-index: -1;
-    background: url(../img/empty_circle.png) no-repeat center;
+    background: url(../img/main/empty_circle.png) no-repeat center;
     min-width: 42px;
     min-height: 42px;
     position: absolute;
@@ -47,12 +47,19 @@
   }
   &__orange-circle {
     z-index: -1;
-    background: url(../img/orange_circle.png) no-repeat center;
+    background: url(../img/main/orange_circle.png) no-repeat center;
     min-width: 61px;
     min-height: 61px;
     position: absolute;
     bottom: 40px;
     right: 10px;
+  }
+  &__orange-big-circle {
+    background: url(../img/main/Orange_big_circle.png) no-repeat center;
+    min-width: 127px;
+    min-height: 127px;
+    position: absolute;
+    left: -45px;
   }
 }
 
